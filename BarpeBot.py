@@ -1,4 +1,4 @@
-import token
+import botToken
 import sys
 import random
 import discord
@@ -11,6 +11,7 @@ import urllib.error
 from discord.ext.commands import Bot
 from discord.ext import commands
 from bs4 import BeautifulSoup
+
 
 client = Bot(description="BarpeBot", command_prefix="!", pm_help = True)
 
@@ -60,4 +61,4 @@ async def on_message(message):
         time[0])
 
 
-client.run(token.getCode())
+client.run(botToken.getCode())
